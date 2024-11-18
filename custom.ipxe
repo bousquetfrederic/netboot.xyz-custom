@@ -5,7 +5,7 @@
 
 :start
 kernel https://boot.netboot.xyz/memdisk raw iso
-initrd https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/iso/CentOS-Stream-10-latest-x86_64-boot.iso
+initrd http://mirror.stream.centos.org/10-stream/BaseOS/x86_64/iso/CentOS-Stream-10-latest-x86_64-boot.iso
 boot || goto custom_exit
 
 
