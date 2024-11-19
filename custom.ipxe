@@ -4,8 +4,9 @@
 ###
 
 :start
-kernel https://boot.netboot.xyz/memdisk raw iso
-initrd https://bousquet.eu/iso/images/pxeboot/
+set base http://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/
+kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img repo=${base}
+initrd ${base}/images/pxeboot/initrd.img
 boot || goto custom_exit
 
 
