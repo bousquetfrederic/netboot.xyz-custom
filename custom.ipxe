@@ -5,7 +5,7 @@
 
 :start
 set base http://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os
-kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img ip=dhcp inst.xdriver=vesa nomodeset repo=${base}
+kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img ip=dhcp inst.xdriver=vesa nomodeset inst.repo=${base}
 initrd ${base}/images/pxeboot/initrd.img
 boot || goto custom_exit
 
